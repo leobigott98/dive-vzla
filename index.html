@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dive Venezuela</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-  <link rel="manifest" href="/images/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/icons/android-chrome-512x512.png">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
     <div class="hero-carousel">
-        <div class="carousel-image" style="background-image: url('images/banner_01.webp');"></div>
-        <div class="carousel-image" style="background-image: url('images/banner_02.webp');"></div>
-        <div class="carousel-image" style="background-image: url('images/banner_03.webp');"></div>
-        <div class="carousel-image" style="background-image: url('images/banner_04.webp');"></div>
+        <div class="carousel-image" style="background-image: url('images/header/banner_01.webp');"></div>
+        <div class="carousel-image" style="background-image: url('images/header/banner_02.webp');"></div>
+        <div class="carousel-image" style="background-image: url('images/header/banner_03.webp');"></div>
+        <div class="carousel-image" style="background-image: url('images/header/banner_04.webp');"></div>
 
         <div class="carousel-indicators">
             <span class="dot active"></span>
@@ -27,14 +30,14 @@
             <span class="dot"></span>
         </div>
     </div>
-    <nav class="navbar">
+    <nav class="social-nav">
         <!-- <div class="icons-container"> -->
             <div class="social-icons">
-                <a href="#"><img src="icons/instagram.png" alt="IG" /></a>
-                <a href="#"><img src="icons/facebook.png" alt="FB" /></a>
-                <a href="#"><img src="icons/tiktok.png" alt="TikTok" /></a>
-                <a href="#"><img src="icons/youtube.png" alt="YouTube" /></a>
-                <a href="#"><img src="icons/whatsapp.png" alt="YouTube" /></a>
+                <a href="#"><img src="images/social/instagram.png" alt="IG" /></a>
+                <a href="#"><img src="images/social/facebook.png" alt="FB" /></a>
+                <a href="#"><img src="images/social/tiktok.png" alt="TikTok" /></a>
+                <a href="#"><img src="images/social/youtube.png" alt="YouTube" /></a>
+                <a href="#"><img src="images/social/whatsapp.png" alt="YouTube" /></a>
             </div>
             <!-- <div class="language-auth">
                 <button class="lang-btn">ES / EN</button>
@@ -47,12 +50,14 @@
       <img src="logo.png" alt="Dive Venezuela" class="logo"/>
       <div class="slogan" >
         <h1>
-            <img src="buzo.png" alt="Buceo Icon" class="icon" style="width: 7.5rem;" />
-            BUCEA
+            <img src="buzo.png" alt="Buceo Icon" class="icon" />
+            <span>BUCEA</span>
         </h1>
         <p>Sumérgete, respira y siente cómo el mar te transforma</p>
         <p class="sub">Con aguas cálidas, cristalinas y llenas de vida, Venezuela también se encuentra en las profundidades</p>
       </div>
+    </div>
+    <div class="navbar">
       <ul class="nav-links">
         <li><a href="#">Inicio</a></li>
         <li class="separator">|</li>
@@ -68,12 +73,14 @@
         <li class="separator">|</li>
         <li><a href="#">Contacto</a></li>
       </ul>
+
     </div>
+    
   </header>
 
   <section class="discount-banner">
     <video autoplay muted loop playsinline>
-    <source src="diver.webm" type="video/webm">
+    <source src="videos/diver.webm" type="video/webm">
     </video>
     <!-- <img src="banner_promo.jpeg" alt="Banner Promo" class="discount-image"> -->
     <div class="discount-text">
@@ -84,45 +91,53 @@
   <section class="locations">
     <div class="grid">
       <div class="location">
-        <img src="margarita.webp" alt="Margarita" class="location-image">
+        <img src="images/locations/margarita.webp" alt="Margarita" class="location-image">
             <p>Margarita<br/><span>El Caribe profundo te llama</span></p>
       </div>
       <div class="location">
-        <img src="isla_larga.webp" alt="Isla Larga" class="location-image">
+        <img src="images/locations/isla_larga.webp" alt="Isla Larga" class="location-image">
             <p>Isla Larga<br/><span>El tesoro submarino de Puerto Cabello</span></p>
       </div>
       <div class="location">
-        <img src="chichiriviche.webp" alt="Chichiriviche" class="location-image">
-         <p>Chichiriviche<br/><span>El secreto mejor guardado del litoral central</span></div></p>
+        <img src="images/locations/chichiriviche.webp" alt="Chichiriviche" class="location-image">
+         <p>Chichiriviche<br/><span>El secreto mejor guardado del litoral central</span></p>
       </div>
+    </div>
     <div class="grid">
       <div class="location large">
-        <img src="curazao.webp" alt="Curazao" class="location-image">
-        Curazao<br/><span>De los mejores destinos de buceo en el mundo</span></div>
-      <div class="location">
-        <img src="bonaire.webp" alt="Bonaire" class="location-image">
-        Bonaire</div>
-      <div class="location">
-        <img src="mal_pelo.webp" alt="Mal Pelo" class="location-image">
-        Malpelo<br/><span>Colombia</span></div>
+        <img src="images/locations/curazao.webp" alt="Curazao" class="location-image">
+        <p>Curazao<br/><span>De los mejores destinos de buceo en el mundo</span></p>
+      </div>
+      <div class="vertical-grid">
+        <div class="location">
+          <img src="images/locations/bonaire.webp" alt="Bonaire" class="location-image">
+          <p>Bonaire</p>
+        </div>
+        <div class="location">
+          <img src="images/locations/mal_pelo.webp" alt="Mal Pelo" class="location-image">
+          <p>Malpelo<br/><span>Colombia</span></p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="sponsors">
-    <img src="scubatec.webp" alt="ScubaTec">
-    <img src="vip_diving.webp" alt="VIP Diving">
-    <img src="la_casa_del_buceo.webp" alt="La casa del buceo">
-  </section>
-
-  <section class="highlight">
-    <p>Besa Los Roques</p>
+    <div class="sponsors-grid">
+      <img src="images/sponsors/scubatec.webp" alt="ScubaTec" class="sponsor-image">
+      <img src="images/sponsors/vip_diving.webp" alt="VIP Diving" class="sponsor-image">
+      <img src="images/sponsors/la_casa_del_buceo.webp" alt="La casa del buceo" class="sponsor-image">
+      <img src="images/sponsors/besa_los_roques.webp" alt="Besa los Roques" class="main-sponsor-image">
+    </div>
+    
   </section>
 
   <section class="testimonials">
     <!-- <div class="testimonials-wrapper"> -->
         <div class="testimonials-background">
             <div class="testimonial-carousel">
-                <button class="testimonial-arrow left">&#10094;</button>
+                <button class="testimonial-arrow left">
+                  <img src="images/icons/left-arrow.png" alt="Left Arrow">
+                </button>
                 <div class="testimonial-track">
                     <div class="testimonial">
                         <p>"Desde que descubrí esta comunidad, he conocido lugares increíbles para bucear que ni sabía que existían en Venezuela. ¡La buena vibra aquí es contagiosa!"</p>
@@ -137,15 +152,22 @@
                         <h4>- Andrea Velásquez</h4>
                     </div>
             </div>
-            <button class="testimonial-arrow right">&#10095;</button>
+            <button class="testimonial-arrow right">
+                  <img src="images/icons/right-arrow.png" alt="Right Arrow">
+                </button>
             </div>
         </div>
 
-    <!-- </div> -->
+     <!-- <div class="footer-divider">
+      <img src="images/icons/wave.webp" alt="Divider" class="divider-icon">
+    
+  </div> -->
     
   </section>
 
+
   <footer>
+    
     <div class="footer-content">
       <div>
         <img src="logo.png" alt="Dive Venezuela">
@@ -168,15 +190,15 @@
       <div class="instagram">
         <p><strong>Instagram</strong></p>
         <div class="gallery">
-          <img src="ig1.webp" alt="">
-          <img src="ig2.webp" alt="">
-          <img src="ig3.webp" alt="">
-          <img src="ig4.webp" alt="">
-          <img src="ig5.webp" alt="">
-          <img src="ig6.webp" alt="">
-          <img src="ig7.webp" alt="">
-          <img src="ig8.webp" alt="">
-          <img src="ig9.webp" alt="">
+          <img src="images/instagram/ig1.webp" alt="">
+          <img src="images/instagram/ig2.webp" alt="">
+          <img src="images/instagram/ig3.webp" alt="">
+          <img src="images/instagram/ig4.webp" alt="">
+          <img src="images/instagram/ig5.webp" alt="">
+          <img src="images/instagram/ig6.webp" alt="">
+          <img src="images/instagram/ig7.webp" alt="">
+          <img src="images/instagram/ig8.webp" alt="">
+          <img src="images/instagram/ig9.webp" alt="">
         </div>
       </div>
     </div>
