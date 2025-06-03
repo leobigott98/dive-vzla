@@ -383,7 +383,6 @@ video {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
 .location {
@@ -438,7 +437,46 @@ video {
 
 .location.large {
   grid-column: span 2;
+  position: relative;
 }
+
+.location.large p {
+  position: absolute;
+  text-align: left;
+  top: 40%;
+  width: 60%;
+  left: 30%;
+}
+
+.location.large span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.location.large strong{
+  font-size: 4.5rem;
+}
+
+.location.vertical p {
+  padding: 3rem 1rem;
+  position: absolute;
+  text-align: left;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  font-size: 3.5rem;
+}
+
+.location.vertical img {
+  height: 100%;
+}
+
+.location.vertical span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
 
 .location:hover {
   transform: scale(1.05);
