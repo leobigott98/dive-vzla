@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dive Venezuela</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="/images/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/images/icons/android-chrome-512x512.png">
-  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="manifest" href="/images/icons/site.webmanifest" type="application/manifest+json">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -22,30 +22,22 @@
         <div class="carousel-image" style="background-image: url('images/header/banner_02.webp');"></div>
         <div class="carousel-image" style="background-image: url('images/header/banner_03.webp');"></div>
         <div class="carousel-image" style="background-image: url('images/header/banner_04.webp');"></div>
-
-        <div class="carousel-indicators">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
     </div>
     <nav class="social-nav">
         <!-- <div class="icons-container"> -->
             <div class="social-icons">
-                <a href="#"><img src="images/social/instagram.png" alt="IG" /></a>
-                <a href="#"><img src="images/social/facebook.png" alt="FB" /></a>
-                <a href="#"><img src="images/social/tiktok.png" alt="TikTok" /></a>
-                <a href="#"><img src="images/social/youtube.png" alt="YouTube" /></a>
-                <a href="#"><img src="images/social/whatsapp.png" alt="YouTube" /></a>
-            </div>
-            <!-- <div class="language-auth">
-                <button class="lang-btn">ES / EN</button>
-                <button class="login-btn">Iniciar Sesión</button>
-            </div> -->
-        <!-- </div> -->
-      
+                <a href="#"><img src="images/social/instagram.png" alt="IG" class="social-icons-image"/></a>
+                <a href="#"><img src="images/social/facebook.png" alt="FB" class="social-icons-image" /></a>
+                <a href="#"><img src="images/social/tiktok.png" alt="TikTok" class="social-icons-image" /></a>
+                <a href="#"><img src="images/social/youtube.png" alt="YouTube" class="social-icons-image" /></a>
+                <a href="#"><img src="images/social/whatsapp.png" alt="YouTube" class="social-icons-image" /></a>
+            </div>   
+        <!-- </div> --> 
     </nav>
+    <div class="language-auth">
+        <button class="lang-btn">ES / EN</button>
+        <button class="login-btn">Iniciar Sesión</button>
+    </div>
     <div class="hero-content">
       <img src="logo.png" alt="Dive Venezuela" class="logo"/>
       <div class="slogan" >
@@ -57,9 +49,15 @@
         <p class="sub">Con aguas cálidas, cristalinas y llenas de vida, Venezuela también se encuentra en las profundidades</p>
       </div>
     </div>
+    <div class="carousel-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     <div class="navbar">
       <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#"><span>Inicio</span></a></li>
         <li class="separator">|</li>
         <li><a href="#">Sobre Nosotros</a></li>
         <li class="separator">|</li>
@@ -84,25 +82,61 @@
     </video>
     <!-- <img src="banner_promo.jpeg" alt="Banner Promo" class="discount-image"> -->
     <div class="discount-text">
-        <p><strong>SOLO POR HOY</strong> 10% DE DESCUENTO EN TODOS NUESTROS CURSOS</p>
+      <p>SOLO POR HOY</p>
+      <p class="bigger-discount">10% DE DESCUENTO EN<p>
+      <p>TODOS NUESTROS CURSOS</p>
     </div>
   </section>
 
   <section class="locations">
-    <div class="grid">
-      <div class="location">
-        <img src="images/locations/margarita.webp" alt="Margarita" class="location-image">
-            <p>Margarita<br/><span>El Caribe profundo te llama</span></p>
-      </div>
-      <div class="location">
-        <img src="images/locations/isla_larga.webp" alt="Isla Larga" class="location-image">
-            <p>Isla Larga<br/><span>El tesoro submarino de Puerto Cabello</span></p>
-      </div>
-      <div class="location">
-        <img src="images/locations/chichiriviche.webp" alt="Chichiriviche" class="location-image">
-         <p>Chichiriviche<br/><span>El secreto mejor guardado del litoral central</span></p>
+    <div class="embla">
+      <div class="embla__container">
+        <div class="embla__slide">Slide 1</div>
+        <div class="embla__slide">Slide 2</div>
+        <div class="embla__slide">Slide 3</div>
+        <div class="embla__slide">Slide 1</div>
+        <div class="embla__slide">Slide 2</div>
+        <div class="embla__slide">Slide 3</div>
       </div>
     </div>
+
+    <div class="locations-carousel">
+      <div class="locations-left-arrow">
+        <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z" fill="#000000"></path>
+          </g>
+        </svg>
+    </div>
+      <div class="grid carousel">
+      <div class="location">
+        <img src="images/locations/margarita.webp" alt="Margarita" class="location-carousel-image">
+        <p>Margarita<br/><span>EL CARIBE PROFUNDO TE LLAMA</span></p>
+      </div>
+      <div class="location">
+        <img src="images/locations/isla_larga.webp" alt="Isla Larga" class="location-carousel-image">
+        <p>Isla Larga<br/><span>EL TESORO SUBMARINO DE PUERTO CABELLO</span></p>
+      </div>
+      <div class="location">
+        <img src="images/locations/chichiriviche.webp" alt="Chichiriviche" class="location-carousel-image">
+        <p>Chichiriviche<br/><span>EL SECRETO MEJOR GUARDADO DEL LITORAL CENTRAL</span></p>
+      </div>
+
+    </div>
+    <div class="locations-right-arrow">
+      <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#000000"></path>
+        </g>
+      </svg>
+    </div>
+    </div>
+    <!-- <div class="grid">
+      
+    </div> -->
     <div class="grid">
       <div class="location large">
         <img src="images/locations/curazao.webp" alt="Curazao" class="location-image">
@@ -126,7 +160,7 @@
       <img src="images/sponsors/scubatec.webp" alt="ScubaTec" class="sponsor-image">
       <img src="images/sponsors/vip_diving.webp" alt="VIP Diving" class="sponsor-image">
       <img src="images/sponsors/la_casa_del_buceo.webp" alt="La casa del buceo" class="sponsor-image">
-      <img src="images/sponsors/besa_los_roques.webp" alt="Besa los Roques" class="main-sponsor-image">
+      <img src="images/sponsors/besa_los_roques.png" alt="Besa los Roques" class="main-sponsor-image">
     </div>
     
   </section>
@@ -140,16 +174,30 @@
                 </button>
                 <div class="testimonial-track">
                     <div class="testimonial">
+                      <img src="images/testimonials/testimonio_1.png" alt="Testimonial 1 Photo" class="testimonial-photo">
+                      <div class="testimonial-text">
+                        <img src="images/icons/quote.png" alt="Quote Icon" class="quote-icon">
+                        <h4>CARLA MENDOZA</h4>
                         <p>"Desde que descubrí esta comunidad, he conocido lugares increíbles para bucear que ni sabía que existían en Venezuela. ¡La buena vibra aquí es contagiosa!"</p>
-                        <h4>- Carla Mendoza</h4>
+                      </div>
+                        
                     </div>
                     <div class="testimonial  active">
+                      <img src="images/testimonials/testimonio_2.png" alt="Testimonial 2 Photo" class="testimonial-photo">
+                      <div class="testimonial-text">
+                        <img src="images/icons/quote.png" alt="Quote Icon" class="quote-icon">
+                        <h4>LUIS ROJAS</h4>
                         <p>"Siempre buceé solo, pero gracias a esta página he conectado con otros apasionados como yo. Ahora no me pierdo ni una inmersión grupal."</p>
-                        <h4>- Luis Rojas</h4>
+                      </div>
                     </div>
                     <div class="testimonial">
+                      <img src="images/testimonials/testimonio_3.png" alt="Testimonial 3 Photo" class="testimonial-photo">
+                      <div class="testimonial-text">
+                        <img src="images/icons/quote.png" alt="Quote Icon" class="quote-icon">
+                        <h4>ANDREA VELÁSQUEZ</h4>
                         <p>"Lo mejor es que no solo compartimos spots, sino consejos, historias y fotos brutales. Es más que una página, es una familia bajo el agua"</p>
-                        <h4>- Andrea Velásquez</h4>
+                      </div>
+                        
                     </div>
             </div>
             <button class="testimonial-arrow right">
@@ -158,10 +206,7 @@
             </div>
         </div>
 
-     <!-- <div class="footer-divider">
       <img src="images/icons/wave.webp" alt="Divider" class="divider-icon">
-    
-  </div> -->
     
   </section>
 
@@ -171,15 +216,17 @@
     <div class="footer-content">
       <div>
         <img src="logo.png" alt="Dive Venezuela">
-        <p><strong>Dive Venezuela</strong> es la puerta de entrada al mundo submarino venezolano. Conoce. Explora. Bucea.</p>
+        <p><strong>Dive Venezuela</strong> es la puerta de entrada al mundo submarino venezolano. Somos la primera comunidad digital creada para buzos locales e internacionales que quieren explorar nuestros mares. <strong>Conoce. Explora. Bucea.</strong></p>
+        <br/>
+        <p>¡El azul te espera!</p>
       </div>
       <div class="contact">
-        <p><strong>Contacto</strong></p>
+        <p><strong>CONTACTO</strong></p>
         <p>+58 000-000.00.00</p>
         <p>divezla@gmail.com</p>
       </div>
       <div class="links">
-        <p><strong>Inicio</strong></p>
+        <p><strong>INICIO</strong></p>
         <p>Sobre Nosotros</p>
         <p>Bucear en Venezuela</p>
         <p>Directorio</p>
@@ -188,7 +235,7 @@
         <p>Contacto</p>
       </div>
       <div class="instagram">
-        <p><strong>Instagram</strong></p>
+        <p><strong>INSTAGRAM</strong></p>
         <div class="gallery">
           <img src="images/instagram/ig1.webp" alt="">
           <img src="images/instagram/ig2.webp" alt="">
@@ -202,6 +249,7 @@
         </div>
       </div>
     </div>
+    <p class="copyright">© 2025 Dive Venezuela. Todos los derechos reservados.</p>
   </footer>
 <!-- Carousel for hero background -->
 <script>
@@ -271,7 +319,6 @@
   startAutoSlide();
 })();
 </script>
-
 <!-- Carousel for testimonials -->
 <script>
 (function () {
@@ -340,6 +387,115 @@ document.querySelector('.testimonial-arrow.right').addEventListener('click', () 
   }
 });
 })();
+</script>
+<script>
+(function () {
+  const track = document.querySelector('.grid.carousel');
+  const items = Array.from(track.children);
+  const leftArrow = document.querySelector('.locations-left-arrow');
+  const rightArrow = document.querySelector('.locations-right-arrow');
+  const itemWidth = items[0].offsetWidth + 16; // Adjusted for gap
+  let index = 0;
+
+/*   const cloneSlides = () => {
+  for (let i = 0; i < items.length; i++) {
+    const clone = items[i].cloneNode(true);
+    clone.classList.add('clone');
+    track.appendChild(clone);
+    track.removeChild(items[i]);
+  }
+  };
+  cloneSlides(); */
+
+  let position = 0;
+
+  const scrollRight = () => {
+    /* console.log('Index before if:', index);
+    if(index > items.length -1) {
+      index = index % items.length
+    }else if(index < 0) {
+      index = Math.abs(index % items.length);
+    }
+    console.log('Index after if:',index); */
+    //Move items left
+    position += itemWidth;
+    console.log('position:', position);
+    track.style.transition = 'transform 0.4s ease';
+    //track.style.transform = `translateX(-${position}px)`;
+    
+    for(item of items) {
+      console.log('item:', item);
+    }
+    console.log('Index:', index);
+    //fill last item with first item
+    console.log('item nro:', index % (items.length));
+      const clone = items[index % (items.length)].cloneNode(true);
+      console.log('clone:',clone);
+      clone.classList.add('clone');
+      console.log('track last child before change:', track.lastElementChild);
+      track.appendChild(clone);
+      console.log('track last child after change:', track.lastElementChild);
+      console.log('track first child:', track.firstElementChild);
+      console.log('track first child before remove:', track.firstElementChild);
+      track.firstElementChild.remove();
+      console.log('track first child after remove:', track.firstElementChild);
+    
+    //Add one to index
+    index++;
+    
+};
+
+const scrollLeft = () => {
+  /* console.log('index before if:', index); */
+  /* if(index > items.length -1) {
+      index = index % items.length
+    }else if(index < 0) {
+      index = Math.abs(index % items.length);
+    } */
+   /*  console.log('Index after if:',index); */
+  //Move items right
+    position -= itemWidth;
+    track.style.transition = 'transform 0.4s ease';
+    //track.style.transform = `translateX(-${position}px)`;
+   
+    console.log('Index:', index);
+    //fill last item with first item
+      console.log('item nro:', items.length - Math.abs(index % items.length) -1);
+      const clone = items[items.length - Math.abs(index % items.length) -1].cloneNode(true);
+      clone.classList.add('clone');
+      console.log('clone:',clone)
+      console.log('track first child before change:', track.firstElementChild);
+      track.insertBefore(clone, track.firstElementChild);
+      console.log('track first child after change:', track.firstElementChild);
+      console.log('track last child:', track.lastElementChild);
+      track.lastElementChild.remove();
+    //Add one to index
+    index--;
+    
+};
+
+rightArrow.addEventListener('click', scrollRight);
+leftArrow.addEventListener('click', scrollLeft);
+
+/* let autoScrollInterval = setInterval(scrollRight, 3000); */
+
+/* track.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+track.addEventListener('mouseleave', () => {
+  autoScrollInterval = setInterval(scrollRight, 3000);
+}); */
+
+})();
+</script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+<script type="text/javascript">
+  const emblaNode = document.querySelector('.embla')
+  const options = { loop: true }
+  const plugins = [EmblaCarouselAutoplay()]
+  const emblaApi = EmblaCarousel(emblaNode, options, plugins)
+
+  //console.log(emblaApi.slideNodes()) // Access API
 </script>
 </body>
 </html>
