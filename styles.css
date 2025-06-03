@@ -20,6 +20,7 @@ body {
   height: 100vh;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  padding: 2vh 2vw;
 }
 
 /* Carousel Base */
@@ -90,16 +91,16 @@ body {
   position: relative;
 } */
 
-.social-icons{
-  width: 15vw;
-}
+/* .social-icons{
+
+} */
 
 .social-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0rem;
-  width: 100vw;
+   width: 100%;
 }
 
 .social-icons-image {
@@ -124,7 +125,7 @@ body {
 .language-auth{
   position: absolute;
   top: 0;
-  padding: 1rem 0;
+  padding: 4vh;
   right: 1%;
   z-index: 4;
 }
@@ -549,6 +550,7 @@ video {
   margin-top: 1rem;
   gap: 2rem;
   padding: 0rem 1rem;
+  width: 100%;
 }
 
 .sponsors-grid{
@@ -556,6 +558,7 @@ video {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .main-sponsor-image{
@@ -725,7 +728,7 @@ video {
 footer {
   background-color: #003675;
   color: white;
-  padding: 3rem 1rem;
+  padding: 2vh 2vw;;
 }
 
 .footer-content {
