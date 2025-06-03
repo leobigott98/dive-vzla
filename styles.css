@@ -756,6 +756,17 @@ footer {
 .links strong{
   color:white;
 }
+
+.instagram {
+  padding: 1rem;
+  border-radius: 5%;
+  transition: all 0.3s ease-in-out;
+}
+.instagram:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  scale: 1.05;
+}
+
 .instagram strong{
   color:white;
 }
